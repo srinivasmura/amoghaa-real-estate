@@ -1,0 +1,576 @@
+/* About page — Amoghaa green, champagne and warm-neutral theme */
+.about-page {
+  color: #183426;
+  background: #fafaf7;
+  overflow: hidden;
+}
+
+.about-eyebrow {
+  display: inline-block;
+  color: #a18753;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.about-hero {
+  position: relative;
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+  background: #142b20;
+}
+
+.about-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url('/images/amoghaa-about-hero.png');
+  background-size: cover;
+  background-position: center 54%;
+}
+
+.about-hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(9, 28, 19, .84) 0%, rgba(9, 28, 19, .62) 39%, rgba(9, 28, 19, .08) 100%), linear-gradient(0deg, rgba(8, 24, 17, .28), transparent 45%);
+}
+
+.about-hero-content {
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
+
+.about-hero-content .about-eyebrow {
+  color: #e0ca9e;
+}
+
+.about-hero h1 {
+  max-width: 690px;
+  margin: 18px 0 20px;
+  color: #fff;
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: clamp(52px, 7vw, 88px);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -1.5px;
+}
+
+.about-hero h1 em,
+.about-section-heading h2 em,
+.about-approach-copy h2 em,
+.about-founder-grid h2 em,
+.about-values-heading h2 em {
+  color: #d4bd8d;
+  font-weight: 500;
+}
+
+.about-hero-content>p {
+  max-width: 520px;
+  margin: 0 0 28px;
+  color: rgba(255, 255, 255, .86);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.about-hero-content a.about-primary-link {
+  border-radius: 20px;
+}
+
+.about-hero-content a.about-primary-link:hover {
+  background: #ead8ad;
+  border-color: #ead8ad;
+  padding: 14px 19px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-primary-link,
+.about-role-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 19px;
+  color: #10291d;
+  background: #ead8ad;
+  border-color: #ead8ad;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: .2s ease;
+}
+
+.about-primary-link:hover,
+.about-role-link:hover {
+  background: #fff;
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.about-hero-caption {
+  position: absolute;
+  right: 5%;
+  bottom: 25px;
+  color: rgba(255, 255, 255, .78);
+  font-size: 9px;
+  letter-spacing: 1.8px;
+}
+
+.about-intro-section {
+  padding: 40px 0;
+  background: #fafaf7;
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  align-items: start;
+}
+
+.about-section-heading h2,
+.about-approach-copy h2,
+.about-founder-grid h2,
+.about-values-heading h2 {
+  margin: 17px 0 0;
+  color: #10291d;
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: clamp(37px, 4.5vw, 57px);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.about-section-heading h2 em,
+.about-approach-copy h2 em,
+.about-founder-grid h2 em,
+.about-values-heading h2 em {
+  color: #a18753;
+}
+
+.about-intro-copy p,
+.about-approach-copy p,
+.about-founder-grid p {
+  color: #69766d;
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+.about-intro-copy .about-lead {
+  margin-top: 0;
+  color: #294333;
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+.about-location-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+  padding-top: 19px;
+  border-top: 1px solid #e5e8df;
+  color: #435c49;
+  font-size: 11px;
+}
+
+.about-location-note svg {
+  flex: 0 0 auto;
+  color: #a18753;
+}
+
+.about-approach-section {
+  padding: 45px 0;
+  background: #f0f2ec;
+}
+
+.about-approach-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 8%;
+  align-items: center;
+}
+
+.about-approach-visual {
+  position: relative;
+  padding: 0 35px 35px 0;
+}
+
+.about-approach-visual:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 65%;
+  height: 72%;
+  border: 1px solid #c9b487;
+  z-index: 0;
+}
+
+.about-approach-visual img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.18;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.about-image-note {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  bottom: 54px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 300px;
+  padding: 14px 16px;
+  background: #10291d;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.about-image-note svg {
+  flex: 0 0 auto;
+  color: #d4bd8d;
+}
+
+.about-approach-copy h2 {
+  margin-bottom: 20px;
+}
+
+.about-approach-promise {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 24px;
+  padding: 16px;
+  border-left: 2px solid #b49a64;
+  background: rgba(255, 255, 255, .65);
+  color: #294333;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.about-approach-promise svg {
+  flex: 0 0 auto;
+  color: #a18753;
+}
+
+.about-checklist-section {
+  padding: 35px 0;
+  background: #10291d;
+  color: #fff;
+}
+
+.about-checklist-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 10%;
+  align-items: center;
+}
+
+.about-checklist-grid h2 {
+  margin: 15px 0;
+  color: #fff;
+  font: 500 clamp(36px, 4vw, 51px)/1.08 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+.about-checklist-grid>div>p {
+  max-width: 390px;
+  color: rgba(255, 255, 255, .68);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.about-guidance-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-guidance-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .15);
+  color: rgba(255, 255, 255, .9);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.about-guidance-list svg {
+  flex: 0 0 auto;
+  color: #d4bd8d;
+}
+
+.about-founder-section {
+  padding: 30px 0;
+  background: #f8f8f4;
+}
+
+.about-founder-grid {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 12%;
+  align-items: center;
+}
+
+.about-founder-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 250px;
+  border: 1px solid #d9cfb7;
+  background: #f0f2ec;
+  color: #a18753;
+  text-align: center;
+}
+
+.about-founder-mark span {
+  color: #38513f;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+.about-founder-grid h2 {
+  max-width: 650px;
+  margin-bottom: 20px;
+}
+
+.about-values-section {
+  padding: 40px 0 35px;
+  background: #f0f2ec;
+}
+
+.about-values-heading {
+  max-width: 640px;
+  margin: 0 auto 43px;
+  text-align: center;
+}
+
+.about-values-heading h2 {
+  margin: 14px 0;
+}
+
+.about-values-heading p {
+  color: #748077;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.about-value-card {
+  position: relative;
+  min-height: 245px;
+  padding: 25px 21px;
+  border: 1px solid #e0e4db;
+  background: #fff;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.about-value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(16, 41, 29, .07);
+}
+
+.about-value-number {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  color: #c4b38e;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+}
+
+.about-value-icon {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: #f2f0e8;
+  color: #a18753;
+}
+
+.about-value-card h3 {
+  max-width: 190px;
+  margin: 0 0 11px;
+  color: #10291d;
+  font: 500 22px/1.15 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+.about-value-card p {
+  margin: 0;
+  color: #10291d;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.about-role-section {
+  padding: 60px 0 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.about-role-inner {
+  max-width: 760px;
+}
+
+.about-role-inner h2 {
+  margin: 14px 0;
+  color: #10291d;
+  font: 500 clamp(39px, 4.5vw, 57px)/1.08 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+.about-role-inner>p {
+  max-width: 670px;
+  margin: 0 auto 27px;
+  color: #10291d;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.about-role-link {
+  color: #10291d;
+  background: #d4bd8d;
+  border: 1px solid #d4bd8d;
+  border-radius: 20px;
+  font-weight: 800;
+  box-shadow: 0 3px 10px #0000001f;
+}
+
+.about-role-link:hover {
+  color: #10291d;
+  background: #ead8ad;
+  border-color: #ead8ad;
+}
+
+@media(max-width:900px) {
+  .about-values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-intro-grid,
+  .about-approach-grid {
+    gap: 6%;
+  }
+}
+
+@media(max-width:700px) {
+  .about-hero {
+    min-height: 570px;
+  }
+
+  .about-hero-image {
+    background-position: 62% center;
+  }
+
+  .about-hero-shade {
+    background: linear-gradient(90deg, rgba(9, 28, 19, .82), rgba(9, 28, 19, .42)), linear-gradient(0deg, rgba(8, 24, 17, .35), transparent);
+  }
+
+  .about-hero-content {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  .about-hero-caption {
+    right: 20px;
+    bottom: 17px;
+    font-size: 8px;
+  }
+
+  .about-intro-section,
+  .about-founder-section {
+    padding: 68px 0;
+  }
+
+  .about-intro-grid,
+  .about-approach-grid,
+  .about-checklist-grid,
+  .about-founder-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-approach-section,
+  .about-checklist-section,
+  .about-values-section {
+    padding: 68px 0;
+  }
+
+  .about-approach-visual {
+    max-width: 560px;
+  }
+
+  .about-guidance-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-founder-mark {
+    min-height: 180px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-value-card {
+    min-height: 0;
+  }
+
+  .about-values-heading {
+    margin-bottom: 30px;
+  }
+}
+
+/* About hero: keep the background image static and animate only the text */
+.about-hero-image {
+  animation: none;
+  transform: none;
+  will-change: auto;
+}
+
+.about-hero-content {
+  animation: aboutHeroTextFade 1.2s ease-out both;
+}
+
+@keyframes aboutHeroTextFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-hero-content {
+    animation: none;
+    opacity: 1;
+  }
+}
