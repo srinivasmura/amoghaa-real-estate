@@ -3933,3 +3933,7 @@ body {
     transition: none;
   }
 }
+
+.contact-feedback {
+  color: green;
+}
