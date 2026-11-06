@@ -3937,3 +3937,642 @@ body {
 .contact-feedback {
   color: green;
 }
+
+
+
+/* =========================================
+   AMOGHAA PREMIUM GOLD GRADIENT BUTTONS
+========================================= */
+
+/* Header - Book a Visit */
+.site-header .nav-cta {
+  background: linear-gradient(115deg,
+      #c49a45 0%,
+      #efd58e 50%,
+      #bd8e37 100%) !important;
+  color: #173f2e !important;
+  border: 1px solid #e9cc83;
+  border-radius: 20px;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(196, 154, 69, 0.25);
+  transition: all 0.3s ease;
+}
+
+.site-header .nav-cta:hover {
+  background: linear-gradient(115deg,
+      #f2dfa9 0%,
+      #d7ae5b 50%,
+      #f2dfa9 100%) !important;
+  color: #102f22 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(196, 154, 69, 0.4);
+}
+
+/* Header - Find Home */
+.site-header .desktop-nav a.nav-highlight {
+  background: linear-gradient(115deg,
+      #c49a45,
+      #efd58e,
+      #bd8e37);
+  color: #173f2e !important;
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(196, 154, 69, 0.2);
+}
+
+.site-header .desktop-nav a.nav-highlight:hover {
+  background: linear-gradient(115deg,
+      #f2dfa9,
+      #d7ae5b,
+      #f2dfa9);
+  color: #102f22 !important;
+  transform: translateY(-2px);
+}
+
+/* Mobile - Book a Site Visit */
+.site-header .mobile-cta {
+  background: linear-gradient(115deg,
+      #c49a45,
+      #efd58e,
+      #bd8e37) !important;
+  color: #173f2e !important;
+  border: 1px solid #e9cc83;
+  transition: all 0.3s ease;
+}
+
+.site-header .mobile-cta:hover {
+  background: linear-gradient(115deg,
+      #f2dfa9,
+      #d7ae5b,
+      #f2dfa9) !important;
+  color: #102f22 !important;
+  transform: translateY(-2px);
+}
+
+/* Keyboard accessibility */
+.site-header .nav-cta:focus-visible,
+.site-header .nav-highlight:focus-visible,
+.site-header .mobile-cta:focus-visible {
+  outline: 3px solid #efd58e;
+  outline-offset: 4px;
+}
+
+
+/* =========================================
+   AMOGHAA PREMIUM GOLD GRADIENT BUTTONS
+========================================= */
+
+:root {
+  --amoghaa-gold-start: #c49a45;
+  --amoghaa-gold-middle: #efd58e;
+  --amoghaa-gold-end: #bd8e37;
+  --amoghaa-gold-hover-start: #f2dfa9;
+  --amoghaa-gold-hover-end: #d7ae5b;
+  --amoghaa-dark-green: #173f2e;
+}
+
+/* Shared gradient background */
+.site-header .nav-cta,
+.site-header .desktop-nav a.nav-highlight,
+.site-header .mobile-cta,
+.find-home-panel .find-button {
+  background: linear-gradient(115deg,
+      var(--amoghaa-gold-start) 0%,
+      var(--amoghaa-gold-middle) 50%,
+      var(--amoghaa-gold-end) 100%) !important;
+
+  color: var(--amoghaa-dark-green) !important;
+  border: 1px solid var(--amoghaa-gold-middle);
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(196, 154, 69, 0.25);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Header Book a Visit */
+.site-header .nav-cta {
+  border-radius: 8px;
+}
+
+/* Header Find Home */
+.site-header .desktop-nav a.nav-highlight {
+  border-radius: 6px;
+}
+
+/* Hero Find Home */
+.find-home-panel .find-button {
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/* Hover effects */
+.site-header .nav-cta:hover,
+.site-header .desktop-nav a.nav-highlight:hover,
+.site-header .mobile-cta:hover,
+.find-home-panel .find-button:hover {
+  background: linear-gradient(115deg,
+      var(--amoghaa-gold-hover-start) 0%,
+      var(--amoghaa-gold-hover-end) 50%,
+      var(--amoghaa-gold-hover-start) 100%) !important;
+
+  color: #102f22 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(196, 154, 69, 0.4);
+}
+
+/* Keyboard accessibility */
+.site-header .nav-cta:focus-visible,
+.site-header .nav-highlight:focus-visible,
+.site-header .mobile-cta:focus-visible,
+.find-home-panel .find-button:focus-visible {
+  outline: 3px solid var(--amoghaa-gold-middle);
+  outline-offset: 4px;
+}
+
+/* Disabled state */
+.find-home-panel .find-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* About page – matching gold gradient buttons */
+.about-page .about-primary-link,
+.about-page .about-role-link {
+  background: linear-gradient(115deg,
+      #c49a45 0%,
+      #efd58e 50%,
+      #bd8e37 100%) !important;
+  color: #173f2e !important;
+  border: 1px solid #efd58e;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(196, 154, 69, 0.25);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Hover gradient */
+.about-page .about-primary-link:hover,
+.about-page .about-role-link:hover {
+  background: linear-gradient(115deg,
+      #f2dfa9 0%,
+      #d7ae5b 50%,
+      #f2dfa9 100%) !important;
+  color: #102f22 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(196, 154, 69, 0.4);
+}
+
+/* Keyboard accessibility */
+.about-page .about-primary-link:focus-visible,
+.about-page .about-role-link:focus-visible {
+  outline: 3px solid #efd58e;
+  outline-offset: 4px;
+}
+
+/* Active desktop navigation link */
+.site-header .desktop-nav a.nav-active {
+  color: #c49a45 !important;
+  font-weight: 700;
+}
+
+/* Active mobile navigation link */
+.site-header .mobile-nav a.mobile-nav-active {
+  color: #c49a45 !important;
+}
+
+.site-header .mobile-nav a.mobile-nav-active .mobile-link-index {
+  color: #c49a45 !important;
+}
+
+
+
+
+/* =========================================
+   AMOGHAA - PREMIUM PROPERTY FILTER PANEL
+========================================= */
+
+.property-filter-panel {
+  background: linear-gradient(145deg, #fffdf8 0%, #f7f3e9 100%);
+  border: 1px solid rgba(196, 154, 69, 0.3);
+  border-radius: 14px;
+  padding: 26px 23px;
+  box-shadow: 0 8px 28px rgba(23, 63, 46, 0.08);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.property-filter-panel:hover {
+  border-color: rgba(196, 154, 69, 0.55);
+  box-shadow: 0 12px 32px rgba(23, 63, 46, 0.12);
+}
+
+/* Filter heading */
+.property-filter-heading {
+  padding-bottom: 19px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid rgba(196, 154, 69, 0.3);
+}
+
+.property-filter-heading h3 {
+  color: #173f2e;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* Clear all button */
+.property-filter-panel .filter-clear {
+  color: #a77b2e;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.property-filter-panel .filter-clear:hover {
+  color: #173f2e;
+  text-decoration: underline;
+}
+
+/* Filter group spacing */
+.property-filter-panel .filter-group {
+  padding-bottom: 19px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid rgba(23, 63, 46, 0.09);
+}
+
+.property-filter-panel .filter-group:last-of-type {
+  border-bottom: none;
+  margin-bottom: 8px;
+}
+
+/* Filter labels */
+.property-filter-panel .filter-label {
+  display: block;
+  color: #173f2e;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  margin-bottom: 11px;
+}
+
+/* Search input and budget dropdown */
+.property-filter-panel .filter-search {
+  width: 100%;
+  min-height: 47px;
+  padding: 0 13px;
+  background: #ffffff;
+  color: #173f2e;
+  border: 1px solid #ded8c9;
+  border-radius: 7px;
+  font-size: 13px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.property-filter-panel .filter-search:focus {
+  outline: none;
+  border-color: #c49a45;
+  box-shadow: 0 0 0 3px rgba(196, 154, 69, 0.14);
+}
+
+/* Checkbox options */
+.property-filter-panel .filter-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 9px;
+  margin: 3px 0;
+  border-radius: 6px;
+  color: #46584e;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.property-filter-panel .filter-option:hover {
+  background: rgba(196, 154, 69, 0.11);
+  color: #173f2e;
+}
+
+.property-filter-panel .filter-option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #a77b2e;
+  cursor: pointer;
+}
+
+/* Demo note */
+.property-filter-panel .filter-demo-note {
+  color: #8a887c;
+  font-size: 11px;
+  line-height: 1.6;
+  padding-top: 12px;
+  border-top: 1px solid rgba(23, 63, 46, 0.09);
+}
+
+/* Mobile filter drawer */
+.property-filter-drawer .property-filter-panel {
+  box-shadow: none;
+  border-radius: 12px;
+}
+
+/* Mobile apply button - same gold gradient */
+.property-filter-drawer .filter-apply-button {
+  background: linear-gradient(115deg,
+      #c49a45 0%,
+      #efd58e 50%,
+      #bd8e37 100%);
+  color: #173f2e;
+  border: 1px solid #efd58e;
+  font-weight: 700;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+.property-filter-drawer .filter-apply-button:hover {
+  background: linear-gradient(115deg,
+      #f2dfa9 0%,
+      #d7ae5b 50%,
+      #f2dfa9 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(196, 154, 69, 0.3);
+}
+
+
+
+/* =========================================
+   PROPERTY FILTER - ENHANCED HIGHLIGHT
+========================================= */
+
+/* Permanent highlighted filter panel */
+.property-filter-panel {
+  background: linear-gradient(145deg, #fffdf7 0%, #f5efdf 100%);
+  border: 1.5px solid rgba(196, 154, 69, 0.65);
+  border-radius: 16px;
+  box-shadow:
+    0 8px 24px rgba(23, 63, 46, 0.10),
+    0 2px 8px rgba(196, 154, 69, 0.12);
+}
+
+/* Larger checkboxes */
+.property-filter-panel .filter-option input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 21px;
+  height: 21px;
+  min-width: 21px;
+  border: 1.5px solid #b9aa8a;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  transition: all 0.2s ease;
+}
+
+/* Checked checkbox */
+.property-filter-panel .filter-option input[type="checkbox"]:checked {
+  background: #173f2e;
+  border-color: #173f2e;
+}
+
+/* Checkmark */
+.property-filter-panel .filter-option input[type="checkbox"]:checked::after {
+  content: "";
+  width: 6px;
+  height: 11px;
+  border: solid #efd58e;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -3px;
+}
+
+/* Checkbox hover */
+.property-filter-panel .filter-option input[type="checkbox"]:hover {
+  border-color: #c49a45;
+  box-shadow: 0 0 0 3px rgba(196, 154, 69, 0.15);
+}
+
+/* Selected option highlight */
+.property-filter-panel .filter-option:has(input[type="checkbox"]:checked) {
+  background: rgba(196, 154, 69, 0.16);
+  border: 1px solid rgba(196, 154, 69, 0.4);
+  color: #173f2e;
+  font-weight: 600;
+}
+
+/* Better option spacing */
+.property-filter-panel .filter-option {
+  min-height: 39px;
+  padding: 7px 10px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+
+/* Keyboard accessibility */
+.property-filter-panel .filter-option input[type="checkbox"]:focus-visible {
+  outline: 3px solid rgba(196, 154, 69, 0.45);
+  outline-offset: 3px;
+}
+
+
+/* ==========================================
+   AMOGHAA - IMPROVED HOMEPAGE SCROLL REVEALS
+========================================== */
+
+.home-reveal {
+  opacity: 0;
+  transform: translateY(42px);
+  transition:
+    opacity 0.55s ease-out,
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.home-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered card reveal */
+.home-reveal-stagger>* {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-reveal-stagger.is-visible>* {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-reveal-stagger.is-visible>*:nth-child(1) {
+  transition-delay: 80ms;
+}
+
+.home-reveal-stagger.is-visible>*:nth-child(2) {
+  transition-delay: 160ms;
+}
+
+.home-reveal-stagger.is-visible>*:nth-child(3) {
+  transition-delay: 240ms;
+}
+
+.home-reveal-stagger.is-visible>*:nth-child(4) {
+  transition-delay: 320ms;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  .home-reveal,
+  .home-reveal-stagger>* {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+}
+
+/* ======================================================
+   AMOGHAA HOMEPAGE SCROLL REVEALS
+   Applied to About, Value Proposition, Success Stories,
+   and Google Reviews. Due Diligence Plan is excluded.
+====================================================== */
+.home-reveal {
+  opacity: 0;
+  transform: translateY(42px);
+  transition: opacity 0.55s ease-out,
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.home-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-reveal-stagger>* {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.5s ease-out,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-reveal-stagger.is-visible>* {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-reveal-stagger.is-visible>*:nth-child(1) {
+  transition-delay: 80ms;
+}
+
+.home-reveal-stagger.is-visible>*:nth-child(2) {
+  transition-delay: 160ms;
+}
+
+.home-reveal-stagger.is-visible>*:nth-child(3) {
+  transition-delay: 240ms;
+}
+
+.home-reveal-stagger.is-visible>*:nth-child(4) {
+  transition-delay: 320ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .home-reveal,
+  .home-reveal-stagger>* {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+}
+
+
+
+/* =========================================
+   AMOGHAA - DUE DILIGENCE PREMIUM ICONS
+========================================= */
+
+.due-diligence__icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+  background: linear-gradient(145deg, #214b3c, #102e24);
+  border: 2px solid #c7a66a;
+
+  color: #e8c995;
+
+  box-shadow:
+    0 8px 20px rgba(23, 55, 45, 0.18),
+    inset 0 1px 5px rgba(255, 255, 255, 0.12);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+.due-diligence__icon svg {
+  width: 38px;
+  height: 38px;
+  stroke-width: 1.8;
+  transition: transform 0.35s ease;
+}
+
+/* Hover effect */
+.due-diligence__step:hover .due-diligence__icon {
+  transform: translateY(-6px) scale(1.08);
+  background: linear-gradient(145deg, #c7a66a, #a98448);
+  color: #17372d;
+
+  box-shadow:
+    0 14px 28px rgba(173, 133, 75, 0.28),
+    0 0 0 6px rgba(199, 166, 106, 0.12);
+}
+
+.due-diligence__step:hover .due-diligence__icon svg {
+  transform: scale(1.1);
+}
+
+/* Mobile sizing */
+@media (max-width: 560px) {
+  .due-diligence__icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 14px;
+  }
+
+  .due-diligence__icon svg {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+  .due-diligence__icon,
+  .due-diligence__icon svg {
+    transition: none;
+  }
+}

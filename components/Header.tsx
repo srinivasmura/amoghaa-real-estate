@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X, ChevronDown } from "lucide-react";
 
 const LOGO_URL = "https://amoghar.com/wp-content/uploads/2025/08/Amogha-logo-final-Golden-png-scaled.png";
@@ -17,6 +18,19 @@ const links = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const [activeHash, setActiveHash] = useState("");
+
+  useEffect(() => {
+    const updateHash = () => {
+      setActiveHash(window.location.hash);
+    };
+    updateHash();
+    window.addEventListener("hashchange", updateHash);
+    return () => {
+      window.removeEventListener("hashchange", updateHash);
+    };
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -38,12 +52,27 @@ export default function Header() {
         </a>
 
         <nav className="desktop-nav" aria-label="Main navigation">
-          {links.map((link) => (
-            <a key={link.label} href={link.href} className={link.label === "FIND HOME" ? "nav-highlight" : ""}>
-              {link.label}
-              {link.dropdown && <ChevronDown size={13} aria-hidden="true" />}
-            </a>
-          ))}
+          {links.map((link) => {
+            const isActive =
+              link.href === "/"
+                ? pathname === "/" && activeHash === ""
+                : link.href.startsWith("/#")
+                  ? pathname === "/" && activeHash === link.href.substring(1)
+                  : pathname === link.href ||
+                  pathname.startsWith(`${link.href}/`);
+
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                className={isActive ? "nav-active" : ""}
+                aria-current={isActive ? "page" : undefined}
+              >
+                {link.label}
+                {link.dropdown && <ChevronDown size={13} aria-hidden="true" />}
+              </a>
+            );
+          })}
         </nav>
 
         <a href="/#contact" className="nav-cta">BOOK A VISIT <ArrowUpRight size={16} /></a>
@@ -70,15 +99,33 @@ export default function Header() {
             </button>
           </div>
           <p className="mobile-eyebrow">YOUR HOME JOURNEY STARTS HERE</p>
-          <nav className="mobile-nav" aria-label="Mobile navigation links">
-            {links.map((link, index) => (
-              <a key={link.label} href={link.href} onClick={() => setOpen(false)}>
-                <span className="mobile-link-index">0{index + 1}</span>
-                <span>{link.label}</span>
-                <ArrowUpRight size={19} aria-hidden="true" />
-              </a>
-            ))}
+
+          <nav className="mobile-nav" aria-label="Mobile navigation">
+            {links.map((link, index) => {
+              const isActive =
+                link.href === "/"
+                  ? pathname === "/" && activeHash === ""
+                  : link.href.startsWith("/#")
+                    ? pathname === "/" && activeHash === link.href.substring(1)
+                    : pathname === link.href ||
+                    pathname.startsWith(`${link.href}/`);
+
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className={isActive ? "mobile-nav-active" : ""}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  <span className="mobile-link-index">0{index + 1}</span>
+                  <span>{link.label}</span>
+                  <ArrowUpRight size={19} aria-hidden="true" />
+                </a>
+              );
+            })}
           </nav>
+
           <a href="/#contact" className="button button-light mobile-cta" onClick={() => setOpen(false)}>
             BOOK A SITE VISIT <ArrowUpRight size={18} />
           </a>

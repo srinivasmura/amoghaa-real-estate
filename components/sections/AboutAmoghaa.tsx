@@ -6,7 +6,7 @@ const AMOGHAA_LOGO =
 
 export default function AboutAmoghaa() {
   return (
-    <section className={styles.aboutSection} id="about-amoghaa">
+    <section className={`${styles.aboutSection} home-reveal`} id="about-amoghaa">
       <div className={styles.aboutContainer}>
         {/* Left: Original transparent Amoghaa logo */}
         <div className={styles.logoWrapper}>

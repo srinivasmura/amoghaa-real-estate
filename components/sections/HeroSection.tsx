@@ -1,6 +1,7 @@
 import FindHomeSearch from "@/components/FindHomeSearch";
 import { BadgeCheck, ShieldCheck } from "lucide-react";
 
+
 export default function HeroSection() {
   return (
     <section className="hero home-reveal">

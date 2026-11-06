@@ -14,7 +14,7 @@ export default function ValueSection() {
         <div><p className="eyebrow">OUR VALUE PROPOSITION</p><h2>More clarity.<br /><em>Less guesswork.</em></h2></div>
         <p className="section-intro">Buying a home is a big decision. We make the journey feel more informed, personal and manageable.</p>
       </div>
-      <div className="service-grid">
+      <div className="service-grid home-reveal-stagger">
         {services.map(({ icon: Icon, title, text }, index) => (
           <article className="service-card" key={title}>
             <span className="service-number">0{index + 1}</span><div className="service-icon"><Icon size={22} /></div>

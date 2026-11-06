@@ -112,7 +112,7 @@ function Carousel({
 
   return (
     <div className={`amg-carousel amg-carousel--${type}`}>
-      <div className="amg-carousel__track">
+      <div className="amg-carousel__track home-reveal-stagger">
         {visibleItems.map((item, itemIndex) => (
           <article
             className="amg-card"
@@ -186,7 +186,7 @@ function Carousel({
 export default function SuccessStoriesAndReviews() {
   return (
     <div className="amg-social-proof">
-      <section className="amg-stories-section" aria-labelledby="amg-stories-title">
+      <section className="amg-stories-section home-reveal" aria-labelledby="amg-stories-title">
         <div className="amg-social-container">
           <div className="amg-section-heading amg-section-heading--split">
             <div>
@@ -207,7 +207,7 @@ export default function SuccessStoriesAndReviews() {
         </div>
       </section>
 
-      <section className="amg-reviews-section" aria-labelledby="amg-reviews-title">
+      <section className="amg-reviews-section home-reveal" aria-labelledby="amg-reviews-title">
         <div className="amg-social-container">
           <div className="amg-reviews-heading">
             <p className="amg-eyebrow">

@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -51,12 +52,41 @@ const values = [
 ];
 
 export default function AboutPage() {
+  useEffect(() => {
+    const elements = document.querySelectorAll<HTMLElement>(
+      ".about-page .home-reveal, .about-page .home-reveal-stagger"
+    );
+
+    if (!("IntersectionObserver" in window)) {
+      elements.forEach((element) => element.classList.add("is-visible"));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: "0px 0px -40px 0px",
+      }
+    );
+
+    elements.forEach((element) => observer.observe(element));
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <>
       <Header />
 
       <main className="about-page">
-        <section className="about-hero">
+        <section className="about-hero  home-reveal">
           <div className="about-hero-image" role="img" aria-label="Contemporary residence surrounded by landscaped greenery" />
           <div className="about-hero-shade" />
           <div className="container about-hero-content">
@@ -73,7 +103,7 @@ export default function AboutPage() {
           <div className="about-hero-caption">AMOGHAA REAL ESTATE · BENGALURU</div>
         </section>
 
-        <section className="about-intro-section">
+        <section className="about-intro-section home-reveal-stagger">
           <div className="container about-intro-grid">
             <div className="about-section-heading">
               <span className="about-eyebrow">ABOUT AMOGHAA</span>
@@ -103,7 +133,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="about-approach-section">
+        <section className="about-approach-section home-reveal">
           <div className="container about-approach-grid">
             <div className="about-approach-visual">
               <img src="/images/amoghaa-about-hero.png" alt="Modern home framed by mature trees and landscaped gardens" />
@@ -144,7 +174,7 @@ export default function AboutPage() {
                 considerations into focus before you take the next step.
               </p>
             </div>
-            <ul className="about-guidance-list">
+            <ul className="about-guidance-list home-reveal-stagger">
               {guidancePoints.map((point) => (
                 <li key={point}><BadgeCheck size={19} /><span>{point}</span></li>
               ))}
@@ -152,7 +182,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="about-founder-section">
+        <section className="about-founder-section home-reveal">
           <div className="container about-founder-grid">
             <div className="about-founder-mark">
               <HeartHandshake size={54} strokeWidth={1.1} />
@@ -175,14 +205,14 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="about-values-section">
+        <section className="about-values-section home-reveal-stagger">
           <div className="container">
             <div className="about-values-heading">
               <span className="about-eyebrow">THE PRINCIPLES WE STAND BY</span>
               <h2>Our values, in <em>every conversation.</em></h2>
               <p>The way we guide matters just as much as the property we discuss.</p>
             </div>
-            <div className="about-values-grid">
+            <div className="about-values-grid home-reveal-stagger">
               {values.map(({ icon: Icon, title, description }, index) => (
                 <article className="about-value-card" key={title}>
                   <span className="about-value-number">0{index + 1}</span>
@@ -195,7 +225,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="about-role-section">
+        <section className="about-role-section  home-reveal">
           <div className="container about-role-inner">
             <span className="about-eyebrow">OUR ROLE</span>
             <h2>Here to guide. Never to pressure.</h2>

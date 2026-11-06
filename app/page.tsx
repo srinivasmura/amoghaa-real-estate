@@ -10,6 +10,7 @@ import GuidanceStrip from "@/components/GuidanceStrip";
 import SuccessStoriesAndReviews from "@/components/sections/SuccessStoriesAndReviews";
 import AboutAmoghaa from "@/components/sections/AboutAmoghaa";
 import HomeScrollReveal from "@/components/HomeScrollReveal";
+import ScrollRevealObserver from "@/components/ScrollRevealObserver";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <HomeScrollReveal />
       <Header />
       <main>
+        <ScrollRevealObserver />
         <HeroSection />
         <section className="trust-strip" aria-label="Amoghaa benefits">
           <div className="container trust-inner">
