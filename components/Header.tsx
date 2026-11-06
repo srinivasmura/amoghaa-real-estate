@@ -119,7 +119,15 @@ export default function Header() {
                   aria-current={isActive ? "page" : undefined}
                 >
                   <span className="mobile-link-index">0{index + 1}</span>
-                  <span>{link.label}</span>
+                  <span className="mobile-link-label">
+                    {link.label === "HOME" ? "Home" :
+                      link.label === "FIND HOME" ? "Find Home" :
+                        link.label === "PROPERTIES" ? "Properties" :
+                          link.label === "LOCATIONS" ? "Locations" :
+                            link.label === "BUILDERS" ? "Builders" :
+                              link.label === "BLOG" ? "Blog" :
+                                link.label === "ABOUT" ? "About" : link.label}
+                  </span>
                   <ArrowUpRight size={19} aria-hidden="true" />
                 </a>
               );
